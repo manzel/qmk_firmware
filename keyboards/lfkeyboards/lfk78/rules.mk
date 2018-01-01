@@ -3,7 +3,7 @@
 # B   - first public release, uses atmega32u4, has audio, ISSI matrix split between RGB and backlight
 # C-H - at90usb1286, no audio, ISSI device 0 is backlight, 4 is RGB
 # J   - at90usb646, C6 audio, ISSI device 0 is backlight, 4 is RGB
-LFK_REV = J
+LFK_REV = D
 
 ifeq ($(LFK_REV), B)
     MCU = atmega32u4
