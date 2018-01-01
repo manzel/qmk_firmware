@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Keymap FUNCTION: Function Layer
    * ,---------.  ,-------------------------------------------------------------.  ,---------.
-   * | V- | V+ |  | ` |F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|     | ` |  |PrSc|Home|
+   * | V- | V+ |  |Slp|F1 |F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|     | ` |  |PrSc|Home|
    * |---------|  |-------------------------------------------------------------|  |---------|
    * |    |    |  |Tab  |Hom| Up|End|PgU|   |   |   |   |   |Ply|   |   |  Del  |  | Del|End |
    * |---------|  |-------------------------------------------------------------|  `---------'
@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `---------'  `------------------------------------------------------'     `--------------'
    */
 [FUNC] = SPLIT_BS_SPLIT_SHIFT_KEYMAP(
-  KC_TR,   KC_TR,    KC_ESC,  KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO, KC_TR,  KC_PSCR, KC_HOME,
+  KC_TR,   KC_TR,    KC_SLEP,  KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO, KC_TR,  KC_PSCR, KC_HOME,
   KC_TR,   KC_TR,    KC_NO,KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MPLY, KC_NO, KC_NO,        KC_DEL,  KC_TR, KC_END,
   KC_TR,   KC_TR,    KC_TR,   KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_NO,    KC_NO,
   KC_TR,   KC_TR,    KC_TR,     KC_NO,  KC_NO,  KC_NO,  KC_NO, KC_NO, KC_NO, KC_MUTE, KC_NO, KC_NO, KC_NO, TG(SETTINGS), KC_TR,         KC_VOLU,
